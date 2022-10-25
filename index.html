@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Web Site</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" alt="menu" class="menu-img">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Moderno</a></li>
+                <li><a href="#">Companhia</a></li>
+                <li><a href="#">Acesso</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+            <img src="images/lamp.png" alt="lamp" class="lamp" id="lamp">
+            <img src="images/light.png" alt="light" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1><strong>Vue<span style="color: #00986f;">Lamp</span></strong> Iluminação</h1>
+            <p>Somos uma empresa especializada em lâmpadas. Estamos trazendo uma enorme coleção de lâmpadas modernas em todas as categorias, desde o uso doméstico até o uso do escritório.</p>
+            <a href="#">Confira nossas coleções</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn")
+        let light = document.getElementById("light")
+        function toggleBtn() {
+            btn.classList.toggle("active")
+            light.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
